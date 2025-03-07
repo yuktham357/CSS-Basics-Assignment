@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerodha Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 180px;
+            background-color: #fff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo img {
+            height: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: rgb(90, 90, 90);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav-links li a:hover {
+            color: #387ed1;
+        }
+
+        /* Hamburger Menu */
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            width: 18px;
+            height: 2px;
+            background-color: rgb(90, 90, 90);
+            margin: 2px 0;
+            border-radius: 2px;
+        }
+
+        /* Pricing Section */
+        .pricing-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .pricing-item {
+            flex: 1;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .pricing-item img {
+            height: 160px;
+            object-fit: contain; 
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .charges-banner-heading {
+            font-size: 22px;
+            color: #333;
+            margin-top: 10px;
+            line-height: 3;
+        }
+
+        .text-grey {
+            font-size: 18px;
+            color: rgb(90, 90, 90);
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .pricing-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://zerodha.com/static/images/logo.svg" alt="Zerodha Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Support</a></li>
+            <li>
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Pricing Section (Single Row Layout) -->
+    <div class="pricing-container">
+        <div class="pricing-item">
+            <img src="https://zerodha.com/static/images/pricing-eq.svg" alt="Equity Delivery">
+            <h1 class="charges-banner-heading">Free Equity Delivery</h1>
+            <p class="text-grey">
+                All equity delivery investments (NSE, BSE) are absolutely free — ₹0 brokerage.
+            </p>
+        </div>
+
+        <div class="pricing-item">
+            <img src="https://zerodha.com/static/images/other-trades.svg" alt="Intraday Trades">
+            <h1 class="charges-banner-heading">Intraday and F&O Trades</h1>
+            <p class="text-grey">
+                Flat ₹20 or 0.03% (whichever is lower) per executed order on 
+                intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.
+            </p>
+        </div>
+
+        <div class="pricing-item">
+            <img src="https://zerodha.com/static/images/pricing-eq.svg" alt="Mutual Funds">
+            <h1 class="charges-banner-heading">Free Direct MF</h1>
+            <p class="text-grey">
+                All direct mutual fund investments are absolutely free — ₹0 commissions & DP charges.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html> 
+ 
